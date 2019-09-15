@@ -3,10 +3,6 @@
     margin-left: 20vw;
 }
 
-nav {
-    box-shadow: 4px 4px 5px silver;
-}
-
 .material-icons {
     padding-top: 1vh;
 }
@@ -30,3 +26,16 @@ nav {
     padding: 0 2vh;
 }
 /* NAVBAR DONE */
+
+.card {
+    margin-bottom: 1.2rem;
+}
+
+h3{
+    padding: 2rem 0;
+}
+
+img {
+    width: 12rem;
+    height: 12rem;
+}
