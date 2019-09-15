@@ -1,0 +1,36 @@
+body {
+    /* margin: 0; */
+    background-color: lightblue;
+}
+
+#login-form {
+    background-color: beige;
+    margin: 10% 39% 10% 40%;
+    text-align: center;
+}
+
+#username {
+    margin: 5% 0 5% 0;
+    width: 90%;
+    height: 2rem;
+    border-radius: 2px;
+}
+
+#password {
+    width: 90%;
+    height: 2rem;
+    border-radius: 2px;
+}
+
+#btn-submit {
+    margin: 1.2rem 0;
+    border-radius: 2px;
+    width: 90%;
+}
+
+#username-err {
+    color: red;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: none;
+}

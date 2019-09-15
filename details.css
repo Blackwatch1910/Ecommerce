@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+#navb {
+    font-size: 5vh;
+    margin-left: 20vw;
+}
+
+nav {
+    box-shadow: 4px 4px 5px silver;
+}
+
+.material-icons {
+    padding-top: 1vh;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    padding: 1px;
+}
+
+#navContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10rem;
+}
+
+.container {
+    margin-bottom: 20vh;
+}
+
+.nav-item {
+    padding: 0 2vh;
+}
+/* NAVBAR DONE */
+
+#section-1 img {
+    width: 25vw;
+    height: 65vh;
+    margin: 24px;
+}
+
+#section-2 {
+    width: 65vw;
+    padding: 1.2rem;
+}
+
+#section-2 h1 {
+    font-size: 40px;
+}
+
+#section-2 > p {
+    font-size: 18px;
+    color: grey;
+    line-height: 0.2;
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+#desc {
+    margin: 1.2rem 0 1.2rem 0;
+    color: grey;
+}
+
+#product {
+    display: flex;
+    flex-direction: row;
+}
+
+#product input:hover {
+    border: 2px solid yellow;
+}
+
+.pa {
+    width: 5vw;
+    height: 8vh;
+    padding: 0px 10px;
+    margin: 10px 10px 20px 0px;
+    border-radius: 5px;
+}
+
+#product p:first-of-type {
+    background-color:#23211f;
+}
+
+#product p:nth-of-type(2) {
+    background-color: #ca3d22;
+}
+
+#product p:nth-of-type(3) {
+    background-color: #565681;
+}
+
+#product p:nth-of-type(4) {
+    background-color: #8a5362;;
+}
+
+#product p:last-of-type {
+    background-color: pink;
+}
+
+
+#section-2 > button {
+    padding: 1.2rem 2.4rem;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(23, 182, 182);
+    color: beige;
+    margin: 2rem 0;
+    border-radius: 0.8rem;
+    outline: none;
+}
+
+#section-2 > button:hover {
+    color: rgb(23, 182, 182);
+    background-color: beige;
+}
+
+.footer-copyright {
+    background-color: #15202b;
+    color: beige;
+}
+
+div > p {
+    font-size: 0.9rem;
+} 
+
+p > a{
+    color: beige;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopLane</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="font-size: 5vh;" href="#"><b>SHOP</b>LANE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CLOTHING <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">ACCESSORIES</a>
+                </li>
+                <li class="nav-item-active">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <i class="material-icons">search</i>
+                        </div>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" placeholder="Search for clothing and accessories"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </li>
+                <li class="nav-item active">
+                    <i class="material-icons md-36">
+                        account_box
+                    </i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <!-- NAVBAR DONE -->
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://assets.jassets.com/assets/images/retaillabs/2019/4/23/fb918512-4e24-4551-a3ef-22d486f66c8f1556026049975-1300x470.jpg"
+                        class="d-block w-100" alt="cover-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets.jassets.com/assets/images/retaillabs/2019/7/4/0c8c7ae8-9e83-449e-ba4a-f992ba5947e41562222307722-Women-Desktop-Slider-StaticPage-1300X470.jpg"
+                        class="d-block w-100" alt="cover-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets.jassets.com/assets/images/retaillabs/2018/12/18/d05ca0cd-1b19-4044-ab60-0c02911d2cc61545145606945-1300x470.jpg"
+                        class="d-block w-100" alt="cover-3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br />
+        <!-- CAROUSEL DONE -->
+
+        <h3 class="heading">Clothing for Men and Women</h3>
+        <div class="card-deck">
+            <div class="card">
+                <img src="http://assets.myntassets.com/assets/images/2187629/2017/10/28/11509182732021-Nike-Men-Black-Solid-Sweatshirt-5261509182731916-1.jpg"
+                    class="card-img-top" alt="Men Casual Sweatshirt">
+                <div class="card-body">
+                    <h5 class="card-title">Men black solid Sweatshirt</h5>
+                    <p class="card-text">₹2599</p>
+                    <p class="card-text"><small class="text-muted">United Colors of Benetton</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d1p88qcukgx4cm.cloudfront.net/media/catalog/product/cache/4/thumbnail/1080x1440/0dc2d03fe217f8c83829496872af24a0/p/1/p19---gucci---545601xjacz1093_3_p.jpg"
+                    class="card-img-top" alt="Men Black Jacket">
+                <div class="card-body">
+                    <h5 class="card-title">Men Black T7 Sporty Jacket</h5>
+                    <p class="card-text">₹7999</p>
+                    <p class="card-text"><small class="text-muted">Puma</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.2golife.in/media/catalog/product/cache/1/image/98c5efc3ced264cb1c24ec5bf362e233/e/l/el-gfw024-s9-black-grey.jpg"
+                    class="card-img-top" alt="Men Sports Shoes">
+                <div class="card-body">
+                    <h5 class="card-title">Men Black Sports Shoes</h5>
+                    <p class="card-text">₹6999</p>
+                    <p class="card-text"><small class="text-muted">Hush Puppies</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.rikastudios.com/wp-content/uploads/2019/03/foto025-0963-e1553780379600-1080x1440.jpg"
+                    class="card-img-top" alt="Women Clothing">
+                <div class="card-body">
+                    <h5 class="card-title">Women Light Coloured Top</h5>
+                    <p class="card-text">₹6999</p>
+                    <p class="card-text"><small class="text-muted">BareSkin</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cottinfab.com/image/cache/catalog/women%20dresses/DSS9373B%20(3)-1080x1440.jpg"
+                    class="card-img-top" alt="Women Maxi Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Women Black Maxi Dress</h5>
+                    <p class="card-text">₹9999</p>
+                    <p class="card-text"><small class="text-muted">CottinFab</small></p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <hr>
+        <!-- ACCESSORIES START HERE -->
+        <h3 class="heading">Accessories for Men and Women</h3>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://www.bigw.com.au/medias/sys_master/images/images/h23/hc6/11738992246814.jpg"
+                    class="card-img-top" alt="Men Casual Sweatshirt">
+                <div class="card-body">
+                    <h5 class="card-title">Fitbit Black Versa Watch</h5>
+                    <p class="card-text">₹13,999</p>
+                    <p class="card-text"><small class="text-muted">FitBit</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.technolec.co.uk/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/l/_/l_10141056.jpg"
+                    class="card-img-top" alt="Men Black Jacket">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Gear S2 SmartWatch</h5>
+                    <p class="card-text">₹15,999</p>
+                    <p class="card-text"><small class="text-muted">SamSung</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.gdprice.co.uk/image/cache/catalog/AppleWatch-Series4-GPS-40mm---Space-Grey-Aluminium-Case-with-Black-Sport-Loop-B07JYDHCGB-2510-1200x1200.jpeg"
+                    class="card-img-top" alt="Men Sports Shoes">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Watch Series 3</h5>
+                    <p class="card-text">₹28,900</p>
+                    <p class="card-text"><small class="text-muted">Apple</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://smhttp-ssl-38250.nexcesscdn.net/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/o/_/o_2.jpg"
+                    class="card-img-top" alt="Women Clothing">
+                <div class="card-body">
+                    <h5 class="card-title">Bose SoundSport IPX4 Wireless</h5>
+                    <p class="card-text">₹15,900</p>
+                    <p class="card-text"><small class="text-muted">Bose</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d2idx9epdcbzys.cloudfront.net/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/5/8/58fc992884f7c2cb7331c644948ba7ea_1.jpg"
+                    class="card-img-top" alt="Women Maxi Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Wireless Airpods</h5>
+                    <p class="card-text">₹16,699</p>
+                    <p class="card-text"><small class="text-muted">Apple</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br />
+        <!-- FOOTER BEGINS -->
+        <div class="container-fluid" style="padding: 0; background-color: #212529; color: beige;">
+            <footer class="page-footer font-small unique-color-dark">
+
+                <div style="background-color: #15202b;">
+                    <div class="container">
+
+                        <!-- Grid row-->
+                        <div class="row py-4 d-flex align-items-center">
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <h6 class="mb-0">Get connected with us on social networks!</h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                <!-- Facebook -->
+                                <a class="fb-ic">
+                                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                                </a>
+                                <!-- Twitter -->
+                                <a class="tw-ic">
+                                    <i class="fab fa-twitter white-text mr-4"> </i>
+                                </a>
+                                <!-- Google +-->
+                                <a class="gplus-ic">
+                                    <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                                </a>
+                                <!--Linkedin -->
+                                <a class="li-ic">
+                                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                                </a>
+                                <!--Instagram-->
+                                <a class="ins-ic">
+                                    <i class="fab fa-instagram white-text"> </i>
+                                </a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+
+                    </div>
+                </div>
+
+        <!-- Footer Links -->
+        <div id="foot" class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">ONLINE STORE</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MEN CLOTHING</a>
+                    </p>
+                    <p>
+                        <a href="#!">WOMEN CLOTHING</a>
+                    </p>
+                    <p>
+                        <a href="#!">MEN ACCESSORIES</a>
+                    </p>
+                    <p>
+                        <a href="#!">WOMEN ACCESSORIES</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">HELPFUL LINKS</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">HOME</a>
+                    </p>
+                    <p>
+                        <a href="#!">ABOUT</a>
+                    </p>
+                    <p>
+                        <a href="#!">CONTACT</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">PARTNERS</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">ZARA</a>
+                    </p>
+                    <p>
+                        <a href="#!">PANTALOONS</a>
+                    </p>
+                    <p>
+                        <a href="#!">LEVI'S</a>
+                    </p>
+                    <p>
+                        <a href="#!">UCB</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="#">DevWeb-Tech.com</a>
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

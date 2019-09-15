@@ -1,0 +1,32 @@
+#navb {
+    font-size: 5vh;
+    margin-left: 20vw;
+}
+
+nav {
+    box-shadow: 4px 4px 5px silver;
+}
+
+.material-icons {
+    padding-top: 1vh;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    padding: 1px;
+}
+
+#navContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10rem;
+}
+
+.container {
+    margin-bottom: 20vh;
+}
+
+.nav-item {
+    padding: 0 2vh;
+}
+/* NAVBAR DONE */

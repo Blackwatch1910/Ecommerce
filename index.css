@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+#navb {
+    font-size: 5vh;
+    margin-left: 20vw;
+}
+
+nav {
+    box-shadow: 4px 4px 5px silver;
+}
+
+.material-icons {
+    padding-top: 1vh;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    padding: 1px;
+}
+
+/* #navContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10rem;
+} */
+
+.nav-item {
+    padding: 0 2vh;
+}
+
+/* NAVBAR DONE */
+
+.heading {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-family: 'Cabin', sans-serif;
+}
+
+.card-title {
+    font-family: 'Work Sans', sans-serif;
+}
+
+div > p {
+    color: green;
+}
+
+.footer-copyright {
+    background-color: #15202b;
+    color: beige;
+}
+
+div > p {
+    font-size: 0.9rem;
+} 
+
+p > a{
+    color: beige;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: none;
+}
