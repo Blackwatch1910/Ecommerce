@@ -1,0 +1,292 @@
+header {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+	width: 100%;
+	height: 90px;
+}
+
+.HeaderLeft, .HeaderRight {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+.HeaderLeft {
+	justify-content: flex-start;
+}
+
+.HeaderRight {
+	justify-content: inherit;
+}
+
+.HeaderWrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Hamb {
+	display: none;
+	cursor: pointer;
+}
+
+.Bar1, .Bar2, .Bar3 {
+	width: 30px;
+	height: 4px;
+	background-color: #333;
+	margin: 4px 0;
+	transition: 0.4s;
+}
+
+.HiddenMenu {
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background-color: white;
+	text-align: center;
+	padding: 40px 10px;
+	transform: translateX(-100%);
+	transition: transform .2s ease-out;
+}
+
+.ShowHiddenMenu {
+	box-shadow: 1px 1px 5px #000;
+	transform: translateX(0%);
+}
+
+.HiddenMenu>div>svg {
+	color: black;
+	font-size: 26px;
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	cursor: pointer;
+	transition: color .2s;
+}
+
+.HiddenMenu>div>svg:hover {
+	color: #007eff;
+}
+
+.Logo a {
+	color: #007eff;
+	font-size: 2.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.Logo span {
+	font-weight: 100;
+    color: #000;
+}
+
+.TopMenu ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.TopMenu a {
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 600;
+	transition: all 0.2s linear;
+	border-bottom: 2px solid transparent;
+}
+
+.TopMenu a:hover {
+	border-bottom: 2px solid #000;
+}
+
+form {
+	position: relative;
+    width: 315px;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+form svg {
+	color: gray;
+	position: absolute;
+	left: 3%;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+input {
+    outline: none;
+    border: 0;
+    width: 85%;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+.HiddenCart, .Cart {
+	display: flex;
+	align-items: center;
+	width: 100px;
+    justify-content: space-between;
+}
+
+.HiddenCart a, .Cart a {
+	position: relative;
+	margin-top: 10px;
+}
+
+.HiddenCart svg, .Cart svg {
+	font-size: 2em;
+	color: #000;
+}
+
+.HiddenCart {
+	display: none;
+}
+
+.Counter {
+	position: absolute;
+    background-color: #007eff;
+    border-radius: 50%;
+	top: -15px;
+	right: -15px;
+    width: 15px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.Avatar {
+	width: 40px;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+}
+
+.Overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 90;
+	background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+
+	header {
+		height: 100px;
+	}
+
+	.HeaderLeft {
+		flex-flow: column;
+		justify-content: space-around;
+	}
+
+	.HeaderRight {
+		flex-flow: column-reverse;
+	}
+
+	.TopMenu ul {
+		text-align: center;
+		padding: 0;
+	}
+
+	.Cart {
+		padding: 5px 0;
+	}
+
+	h1, h2 {
+		font-size: 1.8em;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	header {
+		background-color: rgba(1,1,1,0.2);
+		height: 60px;
+	}
+
+	header .Container{
+		padding: 0;
+	}
+
+	.HeaderWrap {
+		align-items: center;
+		padding: 10px 20px;
+		justify-content: space-around;
+	}
+
+	.Hamb {
+		display: block;
+	}
+
+	.HeaderLeft, .HeaderRight {
+		display: none;
+	}
+
+	.TopMenu {
+		display: block;
+		margin: 10px;
+	}
+
+	.TopMenu ul li {
+		display: block;
+		margin: 10px;
+	}
+
+	.TopMenu a {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+
+	.Logo {
+		margin-bottom: 5px;
+	}
+
+	.HiddenCart {
+		display: flex;
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	form {
+		width: 250px;
+	}
+
+	form input {
+		font-size: 0.8em;
+	}
+
+}
+
+@media screen and (max-width: 414px) {
+
+	input {
+		font-size: .9em;
+	}
+
+	h1, h2 {
+		font-size: 1.2em;
+	}
+
+}
